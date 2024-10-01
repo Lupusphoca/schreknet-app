@@ -1,0 +1,43 @@
+header {
+    margin: 2rem 0;
+    text-align: center;
+    animation: glitch 3s infinite;
+    /* display: flex; 
+    align-items: center; 
+    justify-content: center;  */
+}
+
+header img {
+    width: 10rem;
+    height: auto;
+
+    object-fit: contain;
+    /* display: inline-block; */
+    /* border-radius: 50%; */
+    /* border: 2px solid #758a8a; */
+    /* filter: drop-shadow(0 0 4px rgba(31, 42, 42, 0.5)); */
+}
+
+header h1 {
+    font-family: 'VT323', monospace;
+    font-weight: 700;
+    font-size: 3rem;
+    margin: 1rem 0;
+    letter-spacing: 1rem;
+    color: #00ff00;
+    /* display: inline-block; */
+}
+
+/* .header-title {
+    margin: 0;
+    flex: 1;
+    text-align: center;
+}
+
+.left {
+    text-align: right;
+}
+
+.right {
+    text-align: left;
+} */

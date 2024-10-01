@@ -1,13 +1,22 @@
-import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { Component, model } from '@angular/core';
+
+import { LoginComponent } from './auth/login/login.component';
+import { HeaderComponent } from './auth/header/header.component';
+import { MatrixComponent } from "./style/matrix/matrix.component";
+import { ButtonComponent } from "./shared/button/button.component";
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  imports: [LoginComponent, HeaderComponent, MatrixComponent, ButtonComponent],
 })
 export class AppComponent {
-  title = 'schreknet-app';
+  // outpass = model.required<boolean>();
+  outpass: boolean = false;
+
+  onClick() {
+    this.outpass = !this.outpass;
+    // this.outpass.set(!this.outpass)
+  }
 }

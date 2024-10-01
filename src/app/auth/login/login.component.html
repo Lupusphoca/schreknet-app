@@ -1,0 +1,25 @@
+<form [formGroup]="form" (ngSubmit)="onSubmit()">
+  <h2>LOGIN</h2>
+
+  <div class="control-row">
+    <div class="control no-margin">
+      <label for="email">Email</label>
+      <input id="email" type="email" [formControl]="form.controls.email" />
+    </div>
+
+    <div class="control no-margin">
+      <label for="password">Password</label>
+      <input id="password" type="password" formControlName="password" />
+    </div>
+
+    <app-shared-button [type]='"button"' [cssClass]='"button"' [disabled]="false">CONNECT</app-shared-button>
+  </div>
+
+  @if (stringFormControlIsInvalid(form.controls.email)) {
+  <p class="control-error"> Please enter a valid email address.</p>
+  }
+
+  @if (stringFormControlIsInvalid(form.controls.password)) {
+  <p class="control-error"> Please enter a valid password (at least 6 character long).</p>
+  }
+</form>

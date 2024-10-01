@@ -1,0 +1,33 @@
+.glitch-text {
+    animation: glitch 1.5s infinite;
+}
+
+.matrix-rain {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;  /* Prend toute la largeur de la fenêtre */
+    height: 100%; /* Prend toute la hauteur de la fenêtre */
+    overflow: hidden; /* Cela évite que du contenu supplémentaire fasse apparaître des barres de défilement. */
+    pointer-events: none; /* Pour empêcher l'intéractivé du parent et des enfants (rendre non clickable) */
+    z-index: -1;
+}
+
+.matrix-column {
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* width: 100%;*/
+    height: 100%; /* Prend toute la hauteur disponible */
+    white-space: nowrap;
+    animation: fall linear infinite;
+}
+
+.matrix-column span {
+    display: block;
+    color: #00ff0025;
+    text-shadow: 0px 0px 10px #00ff0015;
+    font-size: 20px;
+    line-height: 1.2;
+    animation: glitch infinite;
+}

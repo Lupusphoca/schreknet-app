@@ -1,0 +1,20 @@
+<div class="matrix-rain">
+    @for (column of matrixColumns; track column) {
+    <div class="matrix-column" [style.left.%]="column.left" [style.animation-duration.s]="column.fallingSpeed">
+        @for (glitchingSymbols of column.glitchingSymbols; track glitchingSymbols) {
+        <span [style.animation-duration.s]="glitchingSymbols.glitchingSpeed"> {{ glitchingSymbols.symbol }} </span>
+        }
+    </div>
+    }
+</div>
+
+<!-- <div class="matrix-rain">
+    @for (var i = 0; i < Model.MatrixColumns.Count; i++) {}
+</div>  -->
+
+<!-- 
+<div class="matrix-rain">
+    <div *ngFor="let column of matrixColumns" class="matrix-column" [style.left.%]="column.left">
+        <span *ngFor="let symbol of column.symbols">{{ symbol }}</span>
+    </div>
+</div> -->

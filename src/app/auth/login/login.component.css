@@ -1,0 +1,23 @@
+.control-row {
+  align-items: flex-end;
+}
+
+.control {
+  flex: 1;
+}
+
+button {
+  padding: 0.6rem 1.75rem;
+}
+
+form {
+  width: 90%;
+  max-width: 40rem;
+  margin: 3rem auto;
+  padding: 2rem;
+  letter-spacing: 0.3rem;
+  /* background: linear-gradient(180deg, #253c3c, #1d4949); */
+  /* background-color: white; */
+  /* border-radius: 4px;
+  box-shadow: 0 0 16px 1px rgba(0, 0, 0, 0.5); */
+}
